@@ -18,34 +18,37 @@ public abstract class BaseTest implements AutoConstant {
 	@BeforeMethod
 	public void precondition() {
 
-		System.setProperty("webdriver.chrome.driver",
-				"/Users/brahmendrajayaraju/Downloads/actitimeUI-main/Actitimec/driver/chromedriver");
+	    System.setProperty("webdriver.chrome.driver",
+	            "/Users/brahmendrajayaraju/Downloads/actitimeUI-main/Actitimec/driver/chromedriver");
 
-		ChromeOptions options = new ChromeOptions();
+	    ChromeOptions options = new ChromeOptions();
 
-		// Add Chrome options to improve speed/stability
-		options.addArguments("--disable-background-networking");
-		options.addArguments("--disable-background-timer-throttling");
-		options.addArguments("--disable-renderer-backgrounding");
-		options.addArguments("--disable-device-discovery-notifications");
-		options.addArguments("--disable-default-apps");
-		options.addArguments("--disable-sync");
-		options.addArguments("--disable-translate");
-		options.addArguments("--disable-features=VizDisplayCompositor");
-		options.addArguments("--disable-features=NetworkService");
-		options.addArguments("--disable-notifications");
-		options.addArguments("--disable-extensions");
-		options.addArguments("--disable-infobars");
-		options.addArguments("--no-first-run");
-		options.addArguments("--start-maximized");
+	    // HEADLESS so browser does not launch UI
+	    options.addArguments("--headless=new");   // 👈 add this line
+	    options.addArguments("--window-size=1920,1080");
 
-		// For macOS
-		options.addArguments("--remote-allow-origins=*");
+	    // Performance & stability options
+	    options.addArguments("--disable-background-networking");
+	    options.addArguments("--disable-background-timer-throttling");
+	    options.addArguments("--disable-renderer-backgrounding");
+	    options.addArguments("--disable-device-discovery-notifications");
+	    options.addArguments("--disable-default-apps");
+	    options.addArguments("--disable-sync");
+	    options.addArguments("--disable-translate");
+	    options.addArguments("--disable-features=VizDisplayCompositor");
+	    options.addArguments("--disable-features=NetworkService");
+	    options.addArguments("--disable-notifications");
+	    options.addArguments("--disable-extensions");
+	    options.addArguments("--disable-infobars");
+	    options.addArguments("--no-first-run");
+	    options.addArguments("--start-maximized");
+	    options.addArguments("--remote-allow-origins=*");
 
-		driver = new ChromeDriver(options);
+	    driver = new ChromeDriver(options);
 
-		driver.get("https://online.actitime.com/udel/login.do");
+	    driver.get("https://online.actitime.com/udel/login.do");
 	}
+
 
 	@AfterMethod
 	public void postcondition(ITestResult res) throws IOException
