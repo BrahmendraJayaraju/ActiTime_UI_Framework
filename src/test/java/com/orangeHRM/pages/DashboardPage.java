@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.orangeHRM.generic.BasePage;
+import com.orangeHRM.generic.GenericUtils;
 
 public class DashboardPage extends BasePage {
 
@@ -30,10 +31,13 @@ public class DashboardPage extends BasePage {
 
 	}
 	
-	public void verifydashboardtext(String dashboardtitle)
+	public void verifydashboardtext(String dashboard)
 	
 	{
-		verifyText(dashelement,dashboardtitle);
+		Veriftelemnt(dashelement);
+		String actualtext=dashelement.getText();
+		
+		GenericUtils.verifyText(actualtext,dashboard);
 	}
 	
 	

@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.orangeHRM.generic.BasePage;
+import com.orangeHRM.generic.GenericUtils;
 
 public class LoginPage extends BasePage {
 
@@ -52,26 +53,35 @@ public class LoginPage extends BasePage {
 		loginbtn.click();
 	}
 
-	public void verifytitle(String etitle)
-	{
+	
+	public void verifytitlelogin(String title) {
+		verifytitlepageclass(title);
+
 		
-		verifytitlepageclass(etitle);
 
 	}
+	
 
-	public String verifyerrormessage() {
+
+	public void verifytext(String expectedmessage) {
 		Veriftelemnt(errmsg);
 		String actualerrmeg = errmsg.getText();
+		GenericUtils.verifyText(actualerrmeg,expectedmessage);
 
-		return actualerrmeg;
+		
 
 	}
 	
-public void verifylogintext(String logtext)
 	
-	{
-		verifyText(loginelement,logtext);
+	public void verifytextinhome(String expectedmessage) {
+		Veriftelemnt(loginelement);
+		String actualerrmeg = loginelement.getText();
+		GenericUtils.verifyText(actualerrmeg,expectedmessage);
+
+		
+
 	}
+
 
 
 

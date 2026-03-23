@@ -28,7 +28,7 @@ public class validLoginLogoutTest extends BaseTest {
 
 		DashboardPage ep = new DashboardPage(driver);
 
-		lp.verifytitle(logintitle);
+		lp.verifytitlelogin(logintitle);
 
 		Reporter.log("user name is:" + user, true);
 
@@ -44,7 +44,7 @@ public class validLoginLogoutTest extends BaseTest {
 		ep.clickavatar();
 		ep.clicklogout();
 
-		lp.verifytitle(logintitle);
+		lp.verifytitlelogin(logintitle);
 
 	}
 }

@@ -34,12 +34,12 @@ public class verifyLogoutTest extends BaseTest {
 		ep.clickavatar();
 		ep.clicklogout();
 
-		lp.verifytitle(logintitle);
+	
 
 
 	
-		
-		lp.verifylogintext(logintext);
+		lp.verifytitlelogin(logintitle);
+		lp.verifytextinhome(logintext);
 
 		
 

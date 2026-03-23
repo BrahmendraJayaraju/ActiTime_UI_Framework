@@ -24,7 +24,7 @@ public class invalidloginTest extends BaseTest {
 
 		LoginPage lp = new LoginPage(driver);
 
-		lp.verifytitle(logintitle);
+		lp.verifytitlepageclass(logintitle);
 
 		for (int i = 2; i <= loginrc; i++) {
 			String user = Exceldata.getdata(filepath, "Login", i, 0);
@@ -39,16 +39,16 @@ public class invalidloginTest extends BaseTest {
 			
 			lp.clickonlogin();
 		}
+		
+		
 
 		lp.clickonlogin();
 
-		Thread.sleep(3000);
+		
 
-		String aerrormessage = lp.verifyerrormessage();
+		lp.verifytext(errormessage );
 
-		Assert.assertEquals(aerrormessage, errormessage);
-
-		Reporter.log("err message is matching " + errormessage, true);
+	
 
 	}
 

@@ -5,9 +5,9 @@
     <classes>
       <class name="com.orangeHRM.tests.verifyLogoutTest">
         <methods>
-          <include name="precondition"/>
           <include name="postcondition"/>
           <include name="testverifylogout"/>
+          <include name="precondition"/>
         </methods>
       </class> <!-- com.orangeHRM.tests.verifyLogoutTest -->
     </classes>
