@@ -104,16 +104,16 @@
       <![CDATA[element is present]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-03-23T16:47:20 GMT-04:00" name="Suite" finished-at="2026-03-23T16:47:40 GMT-04:00" duration-ms="20469">
+  <suite started-at="2026-03-24T14:04:04 GMT-04:00" name="Suite" finished-at="2026-03-24T14:04:31 GMT-04:00" duration-ms="26632">
     <groups>
     </groups>
-    <test started-at="2026-03-23T16:47:20 GMT-04:00" name="Test" finished-at="2026-03-23T16:47:40 GMT-04:00" duration-ms="20469">
+    <test started-at="2026-03-24T14:04:04 GMT-04:00" name="Test" finished-at="2026-03-24T14:04:31 GMT-04:00" duration-ms="26632">
       <class name="com.orangeHRM.tests.invalidloginTest">
-        <test-method is-config="true" signature="precondition()[pri:0, instance:com.orangeHRM.tests.invalidloginTest@1ff4931d]" started-at="2026-03-23T16:47:20 GMT-04:00" name="precondition" finished-at="2026-03-23T16:47:22 GMT-04:00" duration-ms="2234" status="PASS">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.orangeHRM.tests.invalidloginTest@1ff4931d]" started-at="2026-03-24T14:04:04 GMT-04:00" name="precondition" finished-at="2026-03-24T14:04:08 GMT-04:00" duration-ms="3797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method signature="testinvalidlogin()[pri:0, instance:com.orangeHRM.tests.invalidloginTest@1ff4931d]" started-at="2026-03-23T16:47:22 GMT-04:00" name="testinvalidlogin" finished-at="2026-03-23T16:47:25 GMT-04:00" duration-ms="3405" status="PASS">
+        <test-method signature="testinvalidlogin()[pri:0, instance:com.orangeHRM.tests.invalidloginTest@1ff4931d]" started-at="2026-03-24T14:04:08 GMT-04:00" name="testinvalidlogin" finished-at="2026-03-24T14:04:12 GMT-04:00" duration-ms="4015" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[title is matching]]>
@@ -171,7 +171,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testinvalidlogin -->
-        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:com.orangeHRM.tests.invalidloginTest@1ff4931d]" started-at="2026-03-23T16:47:25 GMT-04:00" name="postcondition" finished-at="2026-03-23T16:47:25 GMT-04:00" duration-ms="93" status="PASS">
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:com.orangeHRM.tests.invalidloginTest@1ff4931d]" started-at="2026-03-24T14:04:12 GMT-04:00" name="postcondition" finished-at="2026-03-24T14:04:12 GMT-04:00" duration-ms="100" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -184,11 +184,11 @@
         </test-method> <!-- postcondition -->
       </class> <!-- com.orangeHRM.tests.invalidloginTest -->
       <class name="com.orangeHRM.tests.verifyLogoutTest">
-        <test-method is-config="true" signature="precondition()[pri:0, instance:com.orangeHRM.tests.verifyLogoutTest@6a2f6f80]" started-at="2026-03-23T16:47:33 GMT-04:00" name="precondition" finished-at="2026-03-23T16:47:34 GMT-04:00" duration-ms="1762" status="PASS">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.orangeHRM.tests.verifyLogoutTest@6a2f6f80]" started-at="2026-03-24T14:04:21 GMT-04:00" name="precondition" finished-at="2026-03-24T14:04:23 GMT-04:00" duration-ms="2238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method signature="testverifylogout()[pri:0, instance:com.orangeHRM.tests.verifyLogoutTest@6a2f6f80]" started-at="2026-03-23T16:47:34 GMT-04:00" name="testverifylogout" finished-at="2026-03-23T16:47:40 GMT-04:00" duration-ms="5538" status="PASS">
+        <test-method signature="testverifylogout()[pri:0, instance:com.orangeHRM.tests.verifyLogoutTest@6a2f6f80]" started-at="2026-03-24T14:04:23 GMT-04:00" name="testverifylogout" finished-at="2026-03-24T14:04:31 GMT-04:00" duration-ms="7401" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[element is present]]>
@@ -210,7 +210,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testverifylogout -->
-        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:com.orangeHRM.tests.verifyLogoutTest@6a2f6f80]" started-at="2026-03-23T16:47:40 GMT-04:00" name="postcondition" finished-at="2026-03-23T16:47:40 GMT-04:00" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:com.orangeHRM.tests.verifyLogoutTest@6a2f6f80]" started-at="2026-03-24T14:04:31 GMT-04:00" name="postcondition" finished-at="2026-03-24T14:04:31 GMT-04:00" duration-ms="108" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -223,11 +223,11 @@
         </test-method> <!-- postcondition -->
       </class> <!-- com.orangeHRM.tests.verifyLogoutTest -->
       <class name="com.orangeHRM.tests.validLoginLogoutTest">
-        <test-method is-config="true" signature="precondition()[pri:0, instance:com.orangeHRM.tests.validLoginLogoutTest@1190200a]" started-at="2026-03-23T16:47:25 GMT-04:00" name="precondition" finished-at="2026-03-23T16:47:27 GMT-04:00" duration-ms="1734" status="PASS">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.orangeHRM.tests.validLoginLogoutTest@1190200a]" started-at="2026-03-24T14:04:12 GMT-04:00" name="precondition" finished-at="2026-03-24T14:04:15 GMT-04:00" duration-ms="2747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method signature="testvalidloginlogout()[pri:0, instance:com.orangeHRM.tests.validLoginLogoutTest@1190200a]" started-at="2026-03-23T16:47:27 GMT-04:00" name="testvalidloginlogout" finished-at="2026-03-23T16:47:32 GMT-04:00" duration-ms="5491" status="PASS">
+        <test-method signature="testvalidloginlogout()[pri:0, instance:com.orangeHRM.tests.validLoginLogoutTest@1190200a]" started-at="2026-03-24T14:04:15 GMT-04:00" name="testvalidloginlogout" finished-at="2026-03-24T14:04:21 GMT-04:00" duration-ms="6097" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[testing:Dashboard]]>
@@ -261,7 +261,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testvalidloginlogout -->
-        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:com.orangeHRM.tests.validLoginLogoutTest@1190200a]" started-at="2026-03-23T16:47:32 GMT-04:00" name="postcondition" finished-at="2026-03-23T16:47:33 GMT-04:00" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="postcondition(org.testng.ITestResult)[pri:0, instance:com.orangeHRM.tests.validLoginLogoutTest@1190200a]" started-at="2026-03-24T14:04:21 GMT-04:00" name="postcondition" finished-at="2026-03-24T14:04:21 GMT-04:00" duration-ms="99" status="PASS">
           <params>
             <param index="0">
               <value>

@@ -21,22 +21,15 @@ public abstract class BaseTest implements AutoConstant {
         ChromeOptions options = new ChromeOptions();
 
         
-        boolean isGitHubActions = System.getenv("GITHUB_ACTIONS") != null;
-
-        if (isGitHubActions) {
+      
             options.addArguments("--headless=new");
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
             options.addArguments("--disable-gpu");
             options.addArguments("--window-size=1920,1080"); 
-        } else {
-            
-            System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver");
-            options.addArguments("--start-maximized");
-        }
+       
 
-
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
 
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
