@@ -49,7 +49,7 @@ public class DashboardPage extends BasePage {
 	}
 
 	public void clicklogout() throws InterruptedException {
-		
+		Veriftelemnt(logoutbtn);
 		logoutbtn.click();
 	}
 

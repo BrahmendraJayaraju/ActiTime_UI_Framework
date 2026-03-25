@@ -19,7 +19,7 @@ import org.testng.Reporter;
 public class GenericUtils {
 
 	public static void takescreenshot(WebDriver driver, String name) throws IOException {
-		try {
+		
 			TakesScreenshot t = (TakesScreenshot) driver;
 
 			File src = t.getScreenshotAs(OutputType.FILE);
@@ -27,9 +27,7 @@ public class GenericUtils {
 			File des = new File("./Screenshots/" + name + ".png");
 
 			FileUtils.copyFile(src, des);
-		} catch (Exception e) {
-
-		}
+		
 
 	}
 
@@ -48,7 +46,7 @@ public class GenericUtils {
 	public static void verifyText(String actualText, String expectedText) {
 	    
 
-	    try {
+	
 	        
 			
 
@@ -56,12 +54,10 @@ public class GenericUtils {
 	        	
 	        
 
-	       
-
-	    } catch (Exception e) {
 	      
-	        Assert.fail("Unable to get or verify text");
-	    }
+	      
+	        
+	   
 	}
 
 

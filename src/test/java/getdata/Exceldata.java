@@ -42,7 +42,8 @@ public class Exceldata {
 			}
 
 			catch (Exception e) {
-				return " ";
+				 System.out.println("Error reading Excel: " + e.getMessage());
+		            return "";
 			}
 
 		}
@@ -73,6 +74,7 @@ public class Exceldata {
 			}
 
 			catch (Exception e) {
+				 System.out.println("Error getting row count: " + e.getMessage());
 				return 0;
 			}
 
@@ -103,6 +105,7 @@ public class Exceldata {
 			}
 
 			catch (Exception e) {
+				System.out.println("Error getting cell count: " + e.getMessage());
 				return 0;
 			}
 
