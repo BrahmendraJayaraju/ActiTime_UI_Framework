@@ -3,6 +3,6 @@ package com.orangeHRM.generic;
 public interface AutoConstant {
 
 
-	String filepath = "./Data/input.xlsx";;
+	String filepath = "./Data/input.xlsx";
 
 }
